@@ -1,12 +1,12 @@
 # codealpha_tasks_01
 
-# 🏦 Credit Scoring Model
+#  Credit Scoring Model
 
 This project uses machine learning to predict whether a customer will be approved for credit based on historical financial and demographic data.
 
 ---
 
-## 📁 Files
+##  Files
 
 | File                      | Description                                          |
 | ------------------------- | ---------------------------------------------------- |
@@ -18,11 +18,11 @@ This project uses machine learning to predict whether a customer will be approve
 
 ---
 
-## 📊 Dataset Description
+##  Dataset Description
 
 The dataset contains anonymized financial and demographic features. Each row represents a customer, and the target label indicates whether their credit was approved (`1`) or not (`0`).
 
-### 📌 Features:
+###  Features:
 
 | Feature            | Type            | Description                        |
 | ------------------ | --------------- | ---------------------------------- |
@@ -45,7 +45,7 @@ The dataset contains anonymized financial and demographic features. Each row rep
 
 ---
 
-## 🔧 Preprocessing Steps
+##  Preprocessing Steps
 
 * Replaced missing values represented by `?`
 
@@ -58,7 +58,7 @@ The dataset contains anonymized financial and demographic features. Each row rep
 
 ---
 
-## 🤖 Model Training
+##  Model Training
 
 Used **Random Forest** or **Decision Tree** classifier from `scikit-learn`.
 
@@ -70,7 +70,7 @@ Used **Random Forest** or **Decision Tree** classifier from `scikit-learn`.
 
 ---
 
-## 🔮 Predicting a New Customer
+##  Predicting a New Customer
 
 To predict credit approval for a new customer:
 
@@ -78,37 +78,3 @@ To predict credit approval for a new customer:
 2. Load saved encoders and model.
 3. Preprocess input using the **same encoders**.
 4. Align feature columns and predict.
-
-### Example:
-
-```python
-new_customer = {
-    "Gender": "a",
-    "Age": 30,
-    "Debt": 2.5,
-    "Married": "u",
-    "BankCustomer": "g",
-    "EducationLevel": "q",
-    "Ethnicity": "v",
-    "YearsEmployed": 1.5,
-    "PriorDefault": "f",
-    "Employed": "t",
-    "CreditScore": 10.0,
-    "DriversLicense": "t",
-    "Citizen": "g",
-    "ZipCode": 0,
-    "Income": 10000
-}
-```
-
-Run the script or use a helper function to return:
-
-```
-✅ Credit Approved
-```
-
-or
-
-```
-❌ Credit Not Approved
-```
