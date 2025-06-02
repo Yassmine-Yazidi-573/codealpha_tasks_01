@@ -54,13 +54,12 @@ The dataset contains anonymized financial and demographic features. Each row rep
 * Encoded categorical features using `LabelEncoder`
 
   * One encoder saved per categorical column
-* Standardized column order and removed unnecessary fields (e.g., ZipCode)
 
 ---
 
 ##  Model Training
 
-Used **Random Forest** or **Decision Tree** classifier from `scikit-learn`.
+Used **Random Forest** classifier from `scikit-learn`.
 
 ### Metrics Evaluated:
 
